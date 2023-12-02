@@ -1,5 +1,6 @@
 "use client";
 
+import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -14,12 +15,23 @@ export default function NavigationBar() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               {/* <Image className="h-8 w-8" src="/logo.svg" alt="Logo" /> */}
-              <Link href="/">Logo</Link>
+              <Link href="/" className="font-bold">
+                Smart Donkey
+              </Link>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
+              {navLinks.map((link) => (
+                <Link
+                  href={link.href}
+                  key={link.id}
+                  className="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  {link.name}
+                </Link>
+              ))}
+              {/* <a
                 href="#"
                 className="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -42,7 +54,7 @@ export default function NavigationBar() {
                 className="text-black-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact
-              </a>
+              </a> */}
             </div>
           </div>
           {/* <a className="block md:hidden">MobileLogo</a> */}
