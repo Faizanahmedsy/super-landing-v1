@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/darkmodetoggle";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +11,9 @@ export default function Home() {
           Next Gen Devs!
         </Link>
       </h1>
-
+      <div className="text-center">
+        <ModeToggle />
+      </div>
       <p className="text-2xl text-center">
         Get started by editing{" "}
         <code className="bg-gray-100 p-2 rounded-md text-lg font-mono">
