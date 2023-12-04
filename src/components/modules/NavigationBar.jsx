@@ -60,7 +60,7 @@ export default function NavigationBar() {
           {/* <a className="block md:hidden">MobileLogo</a> */}
           <div className="flex md:hidden">
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
               className="inline-flex items-center justify-center p-2 rounded-md text-black-400 hover:text-black-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-black-500"
               aria-controls="mobile-menu"
               aria-expanded="false"
@@ -101,6 +101,25 @@ export default function NavigationBar() {
                 />
               </svg>
             </button>
+
+            <div
+              className={`${
+                mobileMenuOpen ? "flex" : "hidden"
+              } p-6 bg-black absolute top-14 right-0 mx-4 my-2 min-w-[140px] rounded-xl shadow-lg`}
+            >
+              <ul>
+                {navLinks.map((link) => (
+                  <li key={link.id} className="my-2">
+                    <Link
+                      href={link.href}
+                      className="text-white hover:text-gray-300"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
