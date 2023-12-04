@@ -59,6 +59,49 @@ export const socialLinks = [
   },
 ];
 
+export const ourIntroCardContent = [
+  {
+    title: "Worlds 1 education system with gamification",
+    content:
+      "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  },
+  {
+    title: "Worlds 2 education system with gamification",
+    content:
+      "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  },
+  {
+    title: "Worlds 3 education system with gamification",
+    content:
+      "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  },
+  {
+    title: "Worlds 4 education system with gamification",
+    content:
+      "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  },
+  {
+    title: "Worlds 5 education system with gamification",
+    content:
+      "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  },
+  // {
+  //   title: "Worlds 6 education system with gamification",
+  //   content:
+  //     "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  // },
+  // {
+  //   title: "Worlds 7 education system with gamification",
+  //   content:
+  //     "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  // },
+  // {
+  //   title: "Worlds 8 education system with gamification",
+  //   content:
+  //     "We are the first education system in the world to use gamification as a way of teaching. Our goal is to make learning fun and engaging for student",
+  // },
+];
+
 export const ourGoals = [
   {
     title: "Our Goals",
