@@ -9,7 +9,7 @@ export default function NavigationBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white sticky z-50 top-0 inset-x-0 h-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
