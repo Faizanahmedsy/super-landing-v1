@@ -1,3 +1,5 @@
+//TODO: CHANGE IT FROM CAMEL CASE TO SCREEMING SNAKE CASE
+
 export const navLinks = [
   {
     id: "home",
