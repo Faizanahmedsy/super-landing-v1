@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
+//THIS TOGGLE IS USED IN THE NAVBAR TO CONTROL THE THEME MODE DARK/LIGHT
 export function ModeToggle() {
   const { setTheme } = useTheme();
 
